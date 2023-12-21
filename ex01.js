@@ -26,6 +26,23 @@ const rest = (numberOne, numberTwo) => {
   return result;
 };
 
+const oddOrEven = (numberOne, numberTwo) => {
+  const result = sum(numberOne, numberTwo);
+
+  if(result % 2 == 0) {
+    alert(`A soma dos dois números é par: ${result}`);
+  } else {
+    alert(`A soma dos dois números é impar: ${result}`);
+  };
+};
+
+const sameOrDifferent = (numberOne, numberTwo) => {
+  if(numberOne === numberTwo) {
+    alert(`Os números inseridos são iguais.`);
+  } else {
+    alert(`Os números inseridos são diferentes.`);
+  };
+};
 
 alert(`A soma dos dois números é: ${sum(numberOne, numberTwo)}`);
 
@@ -36,3 +53,6 @@ alert(`A multiplicação dos dois números é: ${multiplication(numberOne, numbe
 alert(`A divisão dos dois números é: ${division(numberOne, numberTwo)}`);
 
 alert(`O resto da divisão dos dois números é: ${rest(numberOne, numberTwo)}`);
+
+oddOrEven(numberOne, numberTwo);
+sameOrDifferent(numberOne, numberTwo);
